@@ -6,6 +6,6 @@ const img = document.getElementById('island');
 const button = document.getElementById('change-island');
 
 button.addEventListener('click', () => {
-    const randomIndex = Math.round(Math.random() * 3);
+    const randomIndex = Math.floor(Math.random() * 3);
     img.src = islands[randomIndex];
 });
