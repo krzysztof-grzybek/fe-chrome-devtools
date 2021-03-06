@@ -15,10 +15,10 @@ function setResult(resultText) {
 
 
 checkButton.addEventListener('click', () => {
-   const text = getText().length;
+   const textLength = getText().length;
    const number = getNumber();
 
-   if (text === number) {
+   if (textLength === number) {
        setResult('Liczba znaków jest równa wprowadzonej wartości');
    } else {
        setResult('Liczba znaków NIE jest równa wprowadzonej wartości');
